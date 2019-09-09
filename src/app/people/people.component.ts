@@ -11,6 +11,8 @@ export class PeopleComponent implements OnInit {
 
   persone = PEOPLE;
 
+  
+
   constructor() { }
 
   ngOnInit() {

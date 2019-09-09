@@ -1,5 +1,7 @@
 <ul class="persone">
   <li *ngFor="let person of persone">
-     NAME: {{person.name}} SURNA: {{person.surname}}
+     <p *ngIf="person.name && person.surname; then ciao; else notShow">
+       <p>Name: {{person.name}} {{person.surname}}
+     </p>
   </li>
 </ul>
